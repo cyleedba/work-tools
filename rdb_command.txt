@@ -1,0 +1,3 @@
+# convert your rdb file to csv file .
+
+rdb -c memory film-backup-0001.rdb --bytes 128 -f > redis-film.csv
