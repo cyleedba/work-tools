@@ -1,0 +1,18 @@
+# use transfer csv file on rdb file and Import to Mysql Database
+# First need to create table
+
+CREATE TABLE `redis_analyze_db` (   
+    `dbname` int(11) NOT NULL,
+    `type` varchar(50) DEFAULT NULL,
+    `key_name` varchar(200) DEFAULT NULL,
+    `size_in_bytes` int(11) DEFAULT NULL,
+    `encoding` varchar(100) DEFAULT NULL,
+    `num_elements` int(11) DEFAULT NULL,
+    `len_largest_element` int(11) DEFAULT NULL,
+    `expired_time` datetime(6) DEFAULT NULL,
+    KEY `redis_analyze_db_kname` (`key_name`) );
+
+
+# import data
+
+LOAD DATA INFILE '/home/pro_dba/redis-film.csv' INTO TABLE redis_analyze_db FIELDS TERMINATED BY ','  ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
