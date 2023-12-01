@@ -1,3 +1,7 @@
 # convert your rdb file to csv file .
+# first need to install rdb-tools command
+
+pip3 install rdbtools
+pip3 install python-lzf
 
 rdb -c memory film-backup-0001.rdb --bytes 128 -f > redis-film.csv
