@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 設定變量以方便修改和重用
-REDIS_HOST="redis-db.bxbb5w.ng.0001.ape1.cache.amazonaws.com"
+REDIS_HOST="your-host-name"
 REDIS_PORT=6379
 REDIS_DB_INDEX=1
 LOG_FILE="redis-cli-bigkeys.log"
