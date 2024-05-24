@@ -1,7 +1,7 @@
 import redis
 
 # connect Redis
-r = redis.Redis(host='redis-film-new.bxbb5w.ng.0001.ape1.cache.amazonaws.com', port=6379, db=1)
+r = redis.Redis(host='xxxxxx', port=6379, db=1)
 
 # prefix
 prefix = "core_sns_user_current_browsed_recommend_film_pool_"
