@@ -2,7 +2,7 @@ import csv
 import pymysql
 
 # Database connection
-conn = pymysql.connect(host='apple.c7gcnnsqylcp.ap-east-1.rds.amazonaws.com', user='admin', password='k3IV7K9cQcZCqfL42TW0', db='apple')
+conn = pymysql.connect(host='xxxxxx', user='xxxx', password='xxxxx', db='xxxx')
 cursor = conn.cursor()
 
 # Function to insert batch
