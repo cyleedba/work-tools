@@ -1,7 +1,7 @@
 import redis
 
 # connect Redis
-r = redis.Redis(host='redis-sv.bxbb5w.ng.0001.ape1.cache.amazonaws.com', port=6379, db=1)
+r = redis.Redis(host='xxxxxxxxxx', port=6379, db=1)
 
 # prefix
 prefix = "core_sns_user_browse_tiktok_short_video_record_*"
